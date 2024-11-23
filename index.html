@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Ajay Balu Rathod - Web Design & Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hamburger-menu" onclick="toggleSidebar()">
+        &#9776; <!-- Hamburger icon -->
+    </div>
+    <div class="sidebar" id="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://www.example.com">External Link</a></li>
+        </ul>
+    </div>
+    <div class="main-content" id="main-content">
+        <header>
+            <img src="https://startupsmagazine.co.uk/sites/default/files/2024-01/web-design.png" alt="Header Image" class="header-image">
+            <h1>Mr.A.B Rathod</h1>
+            <p>CEO & Founder of Web Design & Development Services</p>
+        </header>
+        <section id="home">
+            <h2>Welcome to My Web Design & Development Services</h2>
+            <p>I create stunning and responsive websites to help businesses establish a strong online presence.</p>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>No past projects yet, but I'm excited to showcase my future work here!</p>
+            <a href="https://ajayrathod9607.github.io/My-almost-final-website/">click here to see the project</a>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Website Design</li>
+                <li>Website Development</li>
+                <li>E-commerce Solutions</li>
+                <li>SEO Optimization</li>
+                <li>Maintenance and Support</li>
+            </ul>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Ajay Balu Rathod, the CEO and founder of my web design and development services. As the sole member of my team, I am dedicated to providing personalized and top-notch services to help your business grow online.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me:</p>
+            <p>Phone: <a href="tel:+919607170795">9607170795</a></p>
+            <p>Email: <a href="mailto:rathodajay7624@gmail.com">rathodajay7624@gmail.com</a></p>
+        </section>
+        <footer>
+            <p>&copy; 2024 Ajay Balu Rathod - Web Design & Development Services</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            var mainContent = document.getElementById('main-content');
+            if (sidebar.style.display === 'block') {
+                sidebar.style.display = 'none';
+                mainContent.style.marginLeft = '0';
+            } else {
+                sidebar.style.display = 'block';
+                mainContent.style.marginLeft = '250px';
+            }
+        }
+    </script>
+</body>
+</html>
